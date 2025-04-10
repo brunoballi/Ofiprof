@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Eliminación - OFIPROF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .popup {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 300px;
+            margin: 100px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .popup h2 {
+            color: #333;
+        }
+        .popup p {
+            color: #555;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-cancelar {
+            background-color: #ccc;
+            color: #333;
+        }
+        .btn-confirmar {
+            background-color: #d9534f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="popup">
+        <h2>¿Eliminar Oficio?</h2>
+        <p>Estás por eliminar el oficio <strong>"Electricista"</strong>. Esta acción no se puede deshacer.</p>
+        <button class="btn btn-cancelar" onclick="window.history.back()">Cancelar</button>
+        <button class="btn btn-confirmar">Eliminar</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFIPROF - Alta de Profesional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .contenedor {
+            margin: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .boton {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .volver {
+            display: inline-block;
+            margin-top: 20px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Alta de Profesional</h1>
+</header>
+
+<div class="contenedor">
+
+    <form action="#" method="post">
+        <label>Nombre completo</label>
+        <input type="text" name="nombre" required>
+
+        <label>Oficio</label>
+        <select name="oficio" required>
+            <option value="">Seleccionar</option>
+            <option>Plomero</option>
+            <option>Electricista</option>
+            <option>Gasista</option>
+            <option>Albañil</option>
+            <option>Otros</option>
+        </select>
+
+        <label>Zona / Ubicación</label>
+        <input type="text" name="zona" required>
+
+        <label>Teléfono (WhatsApp)</label>
+        <input type="tel" name="telefono" required>
+
+        <label>Descripción breve</label>
+        <textarea name="descripcion" rows="3" required></textarea>
+
+        <label>Link Foto de perfil (opcional)</label>
+        <input type="url" name="foto">
+
+        <label>Estrellas iniciales (1 a 5)</label>
+        <input type="number" name="estrellas" min="1" max="5" value="3">
+
+        <button type="submit" class="boton">Dar de alta</button>
+    </form>
+
+    <a class="volver" href="home.html">← Volver al Home</a>
+
+</div>
+
+</body>
+</html>

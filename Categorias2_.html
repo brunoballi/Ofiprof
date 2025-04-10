@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFIPROF - Categorías</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .contenedor {
+            margin: 20px;
+        }
+        .categoria {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-bottom: 15px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .categoria:hover {
+            transform: scale(1.05);
+        }
+        .volver {
+            display: inline-block;
+            margin-top: 20px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>OFIPROF</h1>
+</header>
+
+<div class="contenedor">
+
+    <div class="categoria" onclick="location.href='plomeros.html'">🔧 Plomeros</div>
+    <div class="categoria" onclick="location.href='electricistas.html'">💡 Electricistas</div>
+    <div class="categoria" onclick="location.href='gasistas.html'">🔥 Gasistas</div>
+    <div class="categoria" onclick="location.href='albañiles.html'">🏗️ Albañiles</div>
+    <div class="categoria" onclick="location.href='otros.html'">🛠️ Otros Oficios</div>
+
+    <a class="volver" href="index.html">← Volver al Home</a>
+
+</div>
+
+</body>
+</html>
